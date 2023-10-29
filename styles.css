@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Set the background to black */
+    transition: background-color 0.3s; /* Smooth transition effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #fff;
+    color: #000; /* Set text color for light mode */
+    transition: background-color 0.3s, color 0.3s; /* Add color transition */
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    color: #6c4ea8;
+    margin: 0 0 20px;
+}
+
+.question {
+    font-size: 30px;
+}
+
+.options .option {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #9370DB;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.options .option:hover {
+    background-color: #724CA9;
+}
+
+.feedback-container {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.feedback {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+.correct-feedback {
+    background-color: #007F00; /* Green background for correct feedback */
+    color: #fff;
+}
+
+.incorrect-feedback {
+    background-color: #FF0000; /* Red background for incorrect feedback */
+    color: #fff;
+}
+
+.next-button {
+    display: none;
+    background-color: #6c4ea8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 20px auto; /* Center the button horizontally */
+    display: block;
+    width: 100px; /* Adjust the width as needed */
+}
+
+.next-button:hover {
+    background-color: #4b3273;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.toggle-icon.moon {
+    color: #fff;
+}
+
+.toggle-icon {
+    font-size: 50px; /* Increase the font size to make the icons bigger */
+    cursor: pointer;
+}
+
+
+/* Add dark mode styles */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .quiz-container {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .next-button {
+    background-color: #333;
+    color: #fff;
+}
+
+.end-feedback {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Place it behind other content */
+    opacity: 20%;
+  }

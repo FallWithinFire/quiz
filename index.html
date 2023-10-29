@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fire's Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="toggle-container">
+        <span class="toggle-icon">☀️</span>
+    </div>
+    <video id="video-background" autoplay loop muted>
+        <source src="/media/Background.mp4" type="video/mp4">
+      </video>
+    <div class="quiz-container">
+      <h1>Fire's Quiz!</h1>
+      <div class="question">Question goes here?</div>
+      <div class="options">
+        <div class="option" data-correct="true">Option 1</div>
+        <div class="option" data-correct="false">Option 2</div>
+        <div class="option" data-correct="false">Option 3</div>
+        <div class="option" data-correct="false">Option 4</div>
+      </div>
+      <div class="feedback-container">
+        <div class="feedback"></div>
+      </div>
+      <button class="next-button" style="display: none">Next</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
